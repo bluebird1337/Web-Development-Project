@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <meta charset="utf-8">
+        
+      <meta name="viewport" content="width=device-width">
+        
+        <style type = "text/css">
+        
+            body{
+                font-family: 'Open Sans', sans-serif;
+                padding: 0;
+                margin: 0;
+            }
+            #head-bar-container{
+                width: 100%;
+                height:70px;
+                background-color: #F8F8F8;
+            }
+            #logo{
+                float: left;
+                width:200px;
+            }
+            .button{
+                margin-top: 10px;
+                font-size:25px;
+                padding: 5px;
+                border: 1px solid grey;
+                float:left;
+                border-left: none;
+            }
+            #button-container{
+                width : 355px;
+                margin: 0 auto;
+            }
+            #html{
+                border-left: 1px solid grey;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+            #output{
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            .highlight{
+                background-color: #EDEDED !important;
+            }
+            .active{
+                background-color: #E8F2FF;
+            }
+            .hidden{
+                display: none;
+            }
+
+            textarea{
+                margin:none;
+                resize: none;
+            }
+            #textarea-container{
+                float: left;
+            }
+            .panel{
+                border-top:none;
+                border-bottom: none;
+                border-left: none;
+                float: left;
+            }
+        
+        </style>
+        
+        
+      <title>Code_Player</title>
+        
+    </head>
+    
+    <body>
+        
+        <div id="head-bar-container">
+        
+            <div id="logo">
+                <img src = "logo.png">
+            </div>
+
+            <div id="button-container">
+
+                <div class="button active" id="html" >HTML</div>
+
+                <div class="button" id="css" >CSS</div>
+
+                <div class="button" id="javascript">Javascript</div>
+
+                <div class="button active" id="output" >Output</div>
+                
+            </div>
+            
+        </div>
+            
+            
+        <div id="textarea-container">
+            
+            <textarea class="panel" id="htmlpanel"><p id="text">Hello Howard!</p></textarea >
+            
+            <textarea class="panel hidden" id="csspanel">p{color:green;} </textarea >
+            
+            <textarea class="panel hidden" id="javascriptpanel">document.getElementById("text").innerHTML = "Hello World"; </textarea >
+            
+            <iframe class="panel" id="outputpanel"> </iframe >
+            
+        </div>
+        
+        
+        
+        
+        <script type=text/javascript>
+        
+            $(".button").hover(function(){
+                
+                $(this).addClass("highlight");
+                
+                
+            },function(){
+                
+                $(this).removeClass("highlight");
+                
+            });
+            
+            $(".button").click(function(){
+                
+                $(this).toggleClass("active");
+                
+                $(this).removeClass("highlight");
+                
+                var panelID = ($(this).attr("id")) + "panel";
+                
+                $("#" + panelID).toggleClass("hidden");
+                
+                var num_of_hidden = $('.hidden').length;
+                
+                $(".panel").width($(window).width() / (4 - num_of_hidden) - 10 );
+
+            });
+            
+            function update_output(){
+                
+                $("#outputpanel").contents().find("html").html( '<html><head><style type = "text/css">' + $("#csspanel").val() + '</style></head> <body>' + $("#htmlpanel").val() + '</body> </html>');
+                
+                document.getElementById("outputpanel").contentWindow.eval($("#javascriptpanel").val());
+                
+            }
+            
+            update_output();
+            
+            $(".panel").height($(window).height() - $("#head-bar-container").height() - 20);
+            
+            $(".panel").width($(window).width() / 2 - 10 );
+            
+            
+            $('.panel').bind('input propertychange', function(){
+               
+                update_output();
+                
+            });
+            
+            
+        
+        </script>
+
+    </body>
+    
+</html>
+
+
+
+
+

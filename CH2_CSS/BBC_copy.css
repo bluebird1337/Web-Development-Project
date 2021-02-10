@@ -1,0 +1,195 @@
+<style type = "text/css">
+            
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            #top-bar-container{
+                border:none;
+                width:1300px;
+                margin:0 auto;
+                height: 10px;
+            }
+            #logo{
+                position: relative;
+                top:-3px;
+                margin-left: 0 auto;
+                width : 60px;
+                float : left;
+            }
+            .top-bar{
+                font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+                font-size:12px;
+                float:left;
+                padding: 10px 20px;
+                border-right: 1px #EAEAEA solid;
+                position: relative;
+                top:-3px;
+            }
+            #sign-in{
+                margin:none;
+                padding:none;
+                position: relative;
+                top:-2px;
+                height: 11px;
+            }
+            #account-logo{
+                width : 20px;
+                position: relative;
+                left:-5px;
+            }
+            #sign-in-text{
+                position: relative;
+                top:-7px;
+                padding-right: 20px;
+            }
+            #arrow{
+                padding-left: 15px;
+                position: relative;
+                top:4px;
+            }
+            #search{
+                margin-left:10px;
+                position: relative;
+                top:-2px;
+                background-color: #E4E4E4;
+                border:none;   
+            }
+            #scope{
+                width:24px;
+                position: relative;
+                top:3px;
+                left: -6px;
+            }
+            #search-area{
+                margin-top: 3px;
+            }
+            #header-container{
+                padding-left: 135px;
+                width:100%
+                margin:0 auto;
+                height:85px;
+                background-color: #BB1919 !important;
+            }
+            h1{
+                margin:none;
+                color:white;
+                font-size: 40px;
+                font-weight: normal;
+                padding-top: 10px;
+            }
+            .header{                
+                border-right: 1px solid #BB4545;
+                text-decoration: none;
+                float:left;
+                color:white;
+                padding: 0 10px;
+            }
+            .clear-float{
+                clear: left;
+            }
+            #header-section{
+                position: relative;
+                top:-25px;
+                left:-8px;
+                margin: none;
+            }
+            #header-section a:hover{
+                text-decoration: underline;
+            }
+            #white-arrow{
+                position: relative;
+                top:3px;
+                left: 5px;
+            }
+            #page-container{
+                width:1300px;
+                margin: 0 auto;
+            }
+            h2{
+                position: relative;
+                top:-27px;
+                left:18px;
+                width: 45px;
+                font-weight: normal;
+                font-size:20px;
+                border-bottom: 2px solid #a91717;
+            }
+            #main-article{
+                float: left;
+                width:500px;
+                height:500px;
+
+            }
+
+            #main-png{
+                width: 90%;
+            }
+            #sub-article{
+                float: left;
+                width:800px;
+                height:500px;
+            }
+            #Bebo{
+                width:200px;
+                font-size: 25px;
+                font-weight: 700;
+                color:black;
+                text-decoration: none;
+                
+            }
+            #main-article a:hover{
+                text-decoration: underline;
+                color:#1167a8;
+            }
+            #article-text{
+                margin-top: 10px;
+                padding: 0;
+                width:430px;
+                color:#5a5a5a;
+            }
+            .time-cata{
+                color:#5a5a5a;
+                font-weight: 100;
+                font-size: 90%;
+                padding-right: 5px;
+                border-right: 1px grey solid;
+            }
+            #clock{
+                position: relative;
+                top:3px;
+            }
+            #message{
+                position: relative;
+                top:5px;
+            }
+            #sub-title{
+                margin-top: 15px;
+                font-weight: 650;
+            }
+            #play{
+                position: relative;
+                top:3px;
+            }
+            .news{
+                width:240px;
+            }
+            .news-section{
+                margin-right: 10px;
+                width:240px;
+                margin-top: 30px;
+                float: left;
+            }
+            .news-title{
+                margin-top:5px;
+                margin-bottom: 0px;
+                color:black;
+                font-weight: 600;
+            }
+            .news-text{
+                margin-top: 5px;
+                font-weight: 300;
+                color:#5a5a5a;
+            }
+        </style>
