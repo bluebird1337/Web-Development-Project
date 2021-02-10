@@ -12,68 +12,7 @@
         
       <meta name="viewport" content="width=device-width">
         
-        <style type = "text/css">
-        
-            body{
-                font-family: 'Open Sans', sans-serif;
-                padding: 0;
-                margin: 0;
-            }
-            #head-bar-container{
-                width: 100%;
-                height:70px;
-                background-color: #F8F8F8;
-            }
-            #logo{
-                float: left;
-                width:200px;
-            }
-            .button{
-                margin-top: 10px;
-                font-size:25px;
-                padding: 5px;
-                border: 1px solid grey;
-                float:left;
-                border-left: none;
-            }
-            #button-container{
-                width : 355px;
-                margin: 0 auto;
-            }
-            #html{
-                border-left: 1px solid grey;
-                border-top-left-radius: 5px;
-                border-bottom-left-radius: 5px;
-            }
-            #output{
-                border-top-right-radius: 5px;
-                border-bottom-right-radius: 5px;
-            }
-            .highlight{
-                background-color: #EDEDED !important;
-            }
-            .active{
-                background-color: #E8F2FF;
-            }
-            .hidden{
-                display: none;
-            }
-
-            textarea{
-                margin:none;
-                resize: none;
-            }
-            #textarea-container{
-                float: left;
-            }
-            .panel{
-                border-top:none;
-                border-bottom: none;
-                border-left: none;
-                float: left;
-            }
-        
-        </style>
+        <link rel="stylesheet" type="text/css" href="C:\Users\王泓文\Desktop\Web_development\CH4_JQuery\code_player.css">
         
         
       <title>Code_Player</title>
@@ -118,59 +57,7 @@
         
         
         
-        <script type=text/javascript>
-        
-            $(".button").hover(function(){
-                
-                $(this).addClass("highlight");
-                
-                
-            },function(){
-                
-                $(this).removeClass("highlight");
-                
-            });
-            
-            $(".button").click(function(){
-                
-                $(this).toggleClass("active");
-                
-                $(this).removeClass("highlight");
-                
-                var panelID = ($(this).attr("id")) + "panel";
-                
-                $("#" + panelID).toggleClass("hidden");
-                
-                var num_of_hidden = $('.hidden').length;
-                
-                $(".panel").width($(window).width() / (4 - num_of_hidden) - 10 );
-
-            });
-            
-            function update_output(){
-                
-                $("#outputpanel").contents().find("html").html( '<html><head><style type = "text/css">' + $("#csspanel").val() + '</style></head> <body>' + $("#htmlpanel").val() + '</body> </html>');
-                
-                document.getElementById("outputpanel").contentWindow.eval($("#javascriptpanel").val());
-                
-            }
-            
-            update_output();
-            
-            $(".panel").height($(window).height() - $("#head-bar-container").height() - 20);
-            
-            $(".panel").width($(window).width() / 2 - 10 );
-            
-            
-            $('.panel').bind('input propertychange', function(){
-               
-                update_output();
-                
-            });
-            
-            
-        
-        </script>
+        <script type=text/javascript src = "code_player.js"> </script>
 
     </body>
     
