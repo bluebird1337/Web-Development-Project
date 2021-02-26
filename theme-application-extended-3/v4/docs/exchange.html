@@ -1,0 +1,709 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      
+        交換心得分享@Howard 【2020奧地利】
+      
+    </title>
+       <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="assets/css/toolkit.css" rel="stylesheet">
+    <link href="assets/css/application.css" rel="stylesheet">
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      #map {
+        height: 300px;
+      }
+      body {
+        position:relative;
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+      }
+        .contact-option{
+            color:black;
+        }
+        .contact-option:hover{
+            text-decoration: none;
+            color:#3097D1;
+        }
+        #seperate-section{
+            margin-top: 50px;
+        }
+        #homepage{
+            width: 30px;
+            height: 30px;
+        }
+        #last-part{
+            margin-bottom: 300px;
+        }
+
+    </style>
+      
+      <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const asian_super_market = { lat: 47.805270, lng: 13.044220 };
+        // The map, centered at asian_super_market
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: asian_super_market,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: asian_super_market,
+          map: map,
+        });
+      }
+    </script>
+      
+  </head>
+
+
+<body class="with-top-navbar" data-spy="scroll" data-target="#header-nav-bar"  data-offset="100">
+    
+<div class="growl" id="app-growl"></div>
+
+<nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-primary app-navbar" id="header-nav-bar">
+    
+  <a class="navbar-brand" href="exchange.html">
+    <img src="assets/img/exchange/homepage.png" id="homepage">
+  </a>
+    <ul class="navbar-nav nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#first-section">行前準備 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#second-section">生活與日常</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#third-section">疫情下的交換</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#fourth-section">旅行</a>
+      </li>
+
+      <li class="nav-item ">
+        <a class="nav-link" href="#fifth-section">心得</a>
+      </li>
+
+    </ul>
+
+</nav>
+
+    <! -- this is user modal -->
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Contact Me !</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+
+      <div class="modal-body p-0">
+        <div class="modal-body-scroller">
+          <ul class="media-list media-list-users list-group">
+            <li class="list-group-item">
+              <div class="media w-100">
+                <div class="media-body">
+                   <h4 class="contact-option"><span class="icon icon-facebook-with-circle" ></span><a class = "contact-option" href="https://www.facebook.com/profile.php?id=100004189260081">  Facebook </a></h4>
+                  <h4 class = "contact-option"><span class="icon icon-linkedin-with-circle "></span><a class = "contact-option" href="https://www.linkedin.com/in/hong-wen-wang-509930195/">  Linkedin</a></h4>
+                    <h4 class = "contact-option"><span class="icon icon-github-with-circle"></span><a class = "contact-option" href="https://github.com/bluebird1337">  Github</a></h4>
+                      <button class="btn btn-secondary btn-sm float-right" id="copy-email-address">
+                    <span class="glyphicon glyphicon-user"></span> Copy
+                    </button>
+                    <h4 ><span class="icon icon-mail-with-circle"></span> <strong id="my-email-address">  whwen0528@gmail.com  </strong></h4>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+        
+        
+                                
+                                
+        
+    </div>
+  </div>
+</div>
+
+<div class="container pt-4">
+  <div class="row">
+    <! -- this is profile area -->
+      
+    <div class="col-lg-3 ">
+      <div class="card card-profile mb-4">
+        <div class="card-header" style="background-image: url(assets/img/iceland.jpg);"></div>
+        <div class="card-block text-center">
+
+            <img
+              class="card-profile-img"
+              src="assets/img/wang_hong_wen_round.png">
+
+          <h6 class="card-title">
+            <a class="text-inherit" >Wang Hong Wen</a>
+          </h6>
+            
+            <p class="mb-4">Current Studying Quantitative Finance & Computer Science <br>@ National Tsing Hua University</p>
+          <p class="mb-4">Aspiring Software Engineer</p>
+
+          <ul class="card-menu">
+            <li class="card-menu-item">
+              <a href="#userModal" class="text-inherit" data-toggle="modal">
+                Contact me
+                  <br><br>
+                  <div>
+                    <h6 class="my-0"><span class="icon icon-facebook-with-circle"></span>
+                                    <span class="icon icon-linkedin-with-circle"></span>
+                                    <span class="icon icon-mail-with-circle"></span>
+                    </h6>
+                    <br>
+                    <a href="">My website</a>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        
+        <! -- 前言 -->
+      <div class="card visible-md-block visible-lg-block mb-4">
+        <div class="card-block">
+          <h6 class="mb-3">撰寫原因 </h6>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;寫這篇文章的目的主要是想利用網頁開發的技巧將交換學生的經驗做一次完整的統整和分享，以達到學以致用，並且幫助一些有意願或興趣前往歐洲交換的同學，希望我的經驗可以提供你們一些參考。😉
+                <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以下我將以自己到奧地利交換一學期的見聞、經驗出發，歡迎任何討論，有相關問題也歡迎來信詢問。
+                <br>
+                <br>
+                這邊會主要分成五個部分，那我們就開始吧!✨
+            </p>
+        </div>
+      </div>
+
+    </div>
+      
+<!--      Contents      -->
+    <div class="col-lg-6"  id="content-container">
+
+      <ul class="list-group media-list media-list-stream mb-4">
+
+        <li class="media list-group-item p-4" id="first-section">
+
+          <div class="media-body">
+            <div class="media-heading">
+              <h6 >🧳 行前準備 🏠</h6>
+            </div>
+                <div id="visa">
+                
+              一、	簽證
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因為我是交換一學期，所以是申請奧地利D簽證，表格在奧地利辦事處就可以申請了，我花了大約一個月準備所有資料，到辦事處申請時整體流程非常快，而且由於是疫情期間出國，櫃台服務人員相當熱心的提醒各種注意事項，申請兩天後天就通知可領取簽證。
+              </p>
+              <a href="https://www.bmeia.gv.at/tw/%E5%A5%A7%E5%9C%B0%E5%88%A9-%E8%BE%A6%E4%BA%8B%E8%99%95-%E5%8F%B0%E5%8C%97/">👉奧地利辦事處官網</a>
+
+
+            <div class="media-body-inline-grid" data-grid="images">
+              <div style="display: none">
+                  <img data-action="zoom" src="assets/img/exchange/visa1.png">
+                  <p>👆申請表格下載處</p>
+              </div>
+                
+                <div style="display: none">
+                  <img data-action="zoom" src="assets/img/exchange/visa_apply_form.png">
+                    <p>👆申請表格</p>
+              </div>
+                </div>
+                    
+                </div>
+                    
+                <div id="luggage-prepare">
+
+            二、	行李準備
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行李準備可參考自己託運的限制重量，自己建議太厚重的衣物或是一些非必要的消耗品都可以到當地在購買，以下是我的行李清單 : </p>
+                <ul class="list-group">
+                  <li class="list-group-item">文、證件 : 
+                    <p>護照（正本、影本）、國際駕照、外幣、台幣、保險資料、入學許可（正本、影本） </p>
+                    </li>
+                    <li class="list-group-item">生活用品 : 
+                    <p>耳罩、帽子、耳塞、牙刷、牙膏、指甲剪、毛巾、浴巾、拖鞋、資料夾、隨身碟、網卡、延長線、行動電源、轉接頭、保養品、乾洗手、文具、泡麵、常備藥 </p>
+                    </li>
+                    <li class="list-group-item">3C 用品 : 
+                    <p>手機（充電器、備用充電線、SIM卡針）、相機（充電器、記憶卡）、電腦（充電器） </p>
+                    </li>
+                </ul>
+                <p>
+                    以上是我整理我當初帶的東西後，覺得比較重要的，尤其是轉接頭，必須確認是歐洲兩孔式的，然後不要買太小，避免卡在插座上拔不下來(真的很有可能)。
+                </p>
+                    
+                <img data-action="zoom" src="assets/img/exchange/plug-in.jfif">
+                  <p>👆歐洲插座，買太小我當時拔的時候真的花了很久時間😢</p>
+                    
+                </div>
+              
+              <div id="hotel">
+                  三、	住宿
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這所學校的宿舍相當新，但我當初太晚申請了所以沒有申請上，但大多數學生都會住在學生宿舍，價格不貴且附近就有好幾間超市，正前方還有一條小徑可以沿著河流慢跑，房間照片可在學校官網上找到，整體來說是相當舒適，小缺點是離學校大概要走路15分鐘，但沿路景觀非常好，所以同學若是要申請的話切記早點申請。</p>
+            
+                <div class="media-body-inline-grid" data-grid="images">
+                    <div style="display: none">
+                        <img data-action="zoom" src="assets/img/exchange/ISR_outlook.jpg">
+                    </div>
+                    <div style="display: none">
+                        <img data-action="zoom" src="assets/img/exchange/ISR_outlook2.jpg">
+                    </div>
+                    <div style="display: none">
+                        <img data-action="zoom" width="250" height="200" src="assets/img/exchange/ISR_inside.jpg">
+                    </div>
+                    <div style="display: none">
+                        <img data-action="zoom" width="250" height="200" src="assets/img/exchange/ISR_inside2.jpg">
+                    </div>
+                 </div>
+                <p>👆宿舍照片</p>
+                
+                <p>如果跟我一樣沒登記到宿舍的話，不用緊張，在地的學生有搭了一個網站供房東、房客分享資訊，我把連結放在下面，在網站上有看到喜歡的房間，寄信去詢問或是自己發文求租都可以，很快就會有結果了☺️</p>
+                <a href="http://www.oeh-fhkufstein.at/wohnen/">找房網站 Wohnen</a>
+              
+              </div>
+
+            </div>
+
+        </li>
+          
+          <div id ="second-section"><br><br></div>
+          
+        <li class="media list-group-item p-4" >
+          <div class="media-body">
+            <div class="media-body-text">
+              <div class="media-heading">
+                <h6 >🥢生活與日常💲</h6>
+              </div>
+                
+                <div id="daily-cost">
+                一、	生活花費
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;學校部分，剛入學會需要繳交註冊費，好像是10歐，學校會寄信通知，再匯款過去即可，此外沒有其餘花費。
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生活部分，由於我住的地方廚具跟生活用品相當充足，我基本上買東西就只有買食材跟衣服，就生活必需的花費的話，Kufstein有非常多超市，但是如果沒有腳踏車或是其他交通工具的話基本上只會去市中心的Spar或是Eurospar，遠一點的話還有Billa、Hofer跟Lidl，理論上離市中心越遠會越便宜，但因為有點遠不太方便，所以大部分我都是在市中心買食材。
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市內有一間亞超，但東西並不是非常齊全，所以我通常會在旁邊Salzburg的一間亞超購買。<br>
+                        
+                    </p>
+                    
+                    <div id="map"></div>
+                    
+                    <br>
+                    
+                    <img src="assets/img/exchange/asian_specialty_market.png" width="550">
+                    
+                    <p>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由於我天天都自己煮，後期花費一周大約只需要50歐，超市購買食材並不是特別貴，只是每個月可能會在亞超買一些特別的食材跟調味料外，但如果是住在宿舍的話廚具可能不會像住外面那麼齊全，一開始調味料跟廚具的採買可能會花費比較多。若是不想自己煮的話，一餐外面一個kebap價格大約在4~6歐元，但如果要去速食店，像是麥當勞或是subway，或是買披薩的話一餐基本上會花到8~10歐，餐廳都是10歐以上，可以自己斟酌。
+                    </p>
+                    <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 網路部分的話我是申請t-mobile，每個月15歐，流量12G，可以打電話，個人是覺得相當夠用，網速跟訊號都很好，到山區也沒有問題，缺點是到歐洲其他國家就直接沒有服務了，明明有再三跟店員確認，但是一出境還是直接沒有服務，因此同學可能可以選擇其他電信或是再三、再三地確認出國後的狀況，因為如果你到其他國家，儘管看到t-mobile進去詢問，他們也無法提供你幫助，只能回奧地利的T-mobile才能更改方案。
+                    </p>
+                    <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 銀行部分我是選用sparkasse，這是德奧最大的銀行，跟Spar一樣都是各個城市都會有分行，可開通網銀功能，匯款可以直接手機解決，很快就到帳。銀行卡的部分會寄到你的地址，用法跟現今一樣，插入後輸入pin碼就可結帳，奧地利大部分店家都會接受卡或現金，他們更喜歡你刷卡而不是付現。
+                    </p>
+                    
+                    <img src="assets/img/exchange/sparkasse.jfif" width="550">
+                    <p>👆Kufstein當地的Sparkasse</p>
+                    
+                </div>
+                
+                <div id="administration">
+                二、  行政程序方面
+                    <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這間學校行政效率非常的好，不要太晚寄信甚至會當天回復，各種問題都可以詢問他們，值得一提的是選課，這邊選課開始的時間非常的晚，大部分課程也都沒有人數限制，因此只有一階段選課，註冊日當天會說明，簡單來說就是到學校官網的weblearn登入，帳號開通後就可以選課了，不需要志願也不需要亂數，一次到位，因此不需要太急著想選課。
+                    </p>
+                    <img src="assets/img/exchange/course_page.png" width="550">
+                    <p>👆學校的課程網頁</p>
+                    
+                    <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;退課的話是只要總課數不要低於6堂課、上過至少一堂課就可以寫信給國際處退課，完全沒有時間限制。
+                    </p>
+                    <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;學校以外，剛到此地後必須要當地的Rathaus辦戶籍登記，學校網站找的到登記表單，填完後給房東簽名繳交即可，需要有戶籍證明單後才可以開戶，奧地利人的英文非常好，人也很友善，遇到問題基本上都很願意幫助你。
+                    </p>
+                </div>
+                
+                <div id="exchange_during_pandemic">
+                
+                </div>
+
+            </div>
+          </div>
+        </li>
+          
+          <div id ="third-section"><br><br></div>
+          
+        <li class="media list-group-item p-4" >
+          <div class="media-body">
+            <div class="media-body-text">
+              <div class="media-heading">
+                <h6 >💪疫情下的交換😷</h6>
+              </div>
+                <div>
+                    一  、生活方面
+                  <p>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我這趟旅程中，歐洲疫情相當嚴重，但是交換生數目其實還是很多，大部分是歐洲學生，來自西班牙、荷蘭、比利時、法國、德國、羅馬尼亞...等國家，來自西班牙的同學最多，無論來自哪裡的同學都很好相處，大家很常一起去走走或旅行，偶爾會在其中一個同學的房間開個小派對，但因為11月後限制越來越嚴格，所以後來比較少。
+                  </p>
+                  <p>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;歐洲人對於疫情基本上不是看得像台灣人那麼慎重，即使有同學確診，在家隔離兩周後就可以出來繼續生活，幾乎沒有甚麼受到影響。我在旅行時跟房東聊天時他們的態度也是覺得宵禁、封城等有點小題大作，他們認為會死亡、無法恢復的都是較年老、已有相關疾病的人，身體健康基本上沒有大礙，大多人也不相信網路上政府或機構整理出的確診、死亡人數等，這跟台灣人的看法是差距相當大。  
+                  </p>
+                  <p>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在這個時候來交換確實受到非常多人的疑問，看到衛福部每篇整理下的留言也會有許多民眾倡議鎖國，認為出國就不要回國來危及他們權益等，這類言論我大多都是看看就過，在國外我加入了一個海外台灣人創的社團，分享疫情時間的各項資訊，年節時也有人分享自己回台的經驗。在這兩個地方我看到了兩種看法，也知道他們為何會如此思考。在國外的台灣人，回台時也較平時回台多了非常非常多的流程，為了配合防疫的各種程序需要提前一個月就處理回台的各種事項，包含預約核酸檢測、防疫計程車、防疫旅館、到其他城市做檢測的話還需要預定跟安排離境的各項額外的手續。儘管無法改變他人想法，我也希望能從自己出發，以後能夠更加的客觀、善良，指責他人前先試著理解他人背後的苦衷或原因，期許自己能夠像其他大多數在台、或在國外的熱心人士一樣，有更包容的胸懷。
+                  </p>
+                </div>
+                <div>
+                二  課程方面
+                    <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10月時，我們會到學校教室上課，教室座位都需要間格做，且座位間都有隔板，定時消毒，教室環境蠻通風的，但11月後由於情況太不樂觀，我們所有的課程都改為使用teams來完成，一直到學期結束都是使用這種方式來上課。因為疫情，這學期選課沒有分院系，交換生僅能從international program內提供的課程做選擇，是與本地的大學生和研究生分開的，同學都是交換生，課程內容相當輕鬆，大都是做報告跟一些小考，低修是6堂課，這邊的課程很常會集中在短期上完，可能在2周或是1個月內密集上課，然後直接接期末考或是期末報告，考完課程就結束，我有些課程甚至在10月就結束了。
+                    </p>
+                    <img src="assets/img/exchange/classroom.jpg" width="550">
+                    <p>👆教室</p>
+                    
+                    <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;體育課是每周一早上8點開始到選課網站上登記的，選擇有瑜珈、羽球、網球…等，會不斷調整，學生也可以自己申請資源跟教室開課，像是羽球就是我buddy program的研究生在帶。
+                    </p>
+                    <img src="assets/img/exchange/PE_class.png" width="550">
+                    <p>👆每週會更新不同的體育課內容，一般都會有9、10種選擇</p>
+                
+                </div>
+            </div>
+          </div>
+        </li>
+          
+          <div id ="fourth-section"><br><br></div>
+          
+        <li class="media list-group-item p-4" >
+          <div class="media-body">
+            <div class="media-body-text">
+              <div class="media-heading">
+                <h6 >🚗旅行🚋</h6>
+              </div>
+              <p>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在這次交換過程中，各國禁令朝令夕改，其實資訊很雜亂，因此我大多都在奧地利境內，唯一搭火車去德國的幾個城市小小的走訪而已，體驗下來還是覺得自駕較方便，若跟朋友一起去價格也不會貴到太多，且都是相當好的車種，體驗非常好，很推薦大家到歐洲一定要自駕。🙂
+                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我在這少少的放幾張照片就好，更多可以到相片區看:)
+              </p>
+                    <div class="media-body-inline-grid" data-grid="images">
+                  <div style="display: none">
+                    <img data-action="zoom" data-width="600" data-height="700" src="assets/img/exchange/pic/Kufstein_fall.jpg">
+                  </div>
+                    <p>👆Kufstein的秋天</p>
+
+                  <div style="display: none">
+                    <img data-action="zoom" data-width="640" data-height="640" src="assets/img/exchange/pic/pending_wood.jpg">
+                  </div>
+                    <p>👆山上的餐廳</p>
+
+                  <div style="display: none">
+                    <img data-action="zoom" data-width="640" data-height="640" src="assets/img/exchange/pic/pending_sunshine.jpg">
+                  </div>
+                    <p>👆爬了5小時山看到的日出</p>
+
+                  <div style="display: none">
+                    <img data-action="zoom" data-width="1048" data-height="700" src="assets/img/exchange/pic/Hallstact_Ice_cave.jpg">
+                  </div>
+                    <p>👆Hallstatt附近上山的道路</p>
+
+                    <div style="display: none">
+                    <img data-action="zoom" src="assets/img/exchange/pic/Graz_top.jpg">
+                  </div>
+                    <p>👆Graz城堡山上俯瞰的城市</p>    
+
+                    <div style="display: none">
+                    <img data-action="zoom" src="assets/img/exchange/pic/Hallstatt.jpg">
+                  </div>
+                    <p>👆Hallstatt</p>  
+
+                    <div style="display: none">
+                    <img data-action="zoom" src="assets/img/exchange/pic/Salzburg_top.jpg">
+                  </div>
+                    <p>👆Salzburg</p>  
+
+                    <div style="display: none">
+                    <img data-action="zoom" src="assets/img/exchange/pic/Samoye.jpg">
+                  </div>
+                    <p>👆旅途中遇到的可愛狗狗</p>      
+
+                    <div style="display: none">
+                    <img data-action="zoom" src="assets/img/exchange/pic/Snow_Kon.jpg">
+                  </div>
+                    <p>👆無人的國王湖</p>     
+
+                    <div style="display: none">
+                    <img data-action="zoom" src="assets/img/exchange/pic/Munich_platz.jpg">
+                  </div>
+                    <p>👆Munich 的 Marienplatz</p>  
+
+                </div>
+            </div>
+          </div>
+        </li>
+          
+          <div id ="fifth-section"><br><br></div>
+          
+        <li class="media list-group-item p-4" id="last-part">
+          <div class="media-body">
+            <div class="media-body-text">
+              <div class="media-heading">
+
+                <h6 >心得</h6>
+              </div>
+              <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;這趟旅程遇到的不便非常多，但因為是自己下的決定，且出發時我沒有做太多的預期，因此我沒有太多的抱怨和沮喪，覺得自己到現在，每個選擇都是自己做的，每個選擇的當下都是思考過的最佳選擇，那也沒有什麼好後悔，事情無論發展的順不順利，我都讓自己能夠從中學習到一點什麼，以期未來遇事能更有經驗的處理。
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我這趟旅程選擇的課程不多，因此有非常多自己的時間可以做想做的事情，我大部分花在自己買的線上課程、運動跟學習樂器上，也跟其他交換生有相當多的交集，對於這趟旅程我原先因為疫情並沒有太多預期，因此到了當地可以體驗各種事情、做各種自己想做的事情是件讓我很感恩的事情，我認為預期太多不是一個好心態，因為你可能會不斷抱怨，若能心懷感恩的面對所有遇到的人跟事，這會幫助你更好的處理事情跟維持好心情。
+<br><br>              
+總結一下心得:
+<br><br> 
+🔖Never assume 預設的立場越小 成就的可能就越大
+<br><br>
+🔖離開舒適圈，遇到挑戰以及恐懼時專注在自己的所獲，檢視自己的成長             
+<br><br>
+🔖不動腦、不努力去做是最沒有意義的，思考、努力後去嘗試，儘管失敗也是有收穫的
+<br><br>
+🔖選擇既然都已經選了 ，一直煩惱選錯也無濟於事，因此選擇沒有對錯，只是跟選擇的目標有沒有緣份而已
+<br><br>
+謝謝你看到最後，如果有問題歡迎寄信或傳訊給我與我討論，期待能與你交流你的旅程:)
+<br><br> 
+祝好。
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+      
+      <!--     Right column     -->
+    <div class="col-lg-3">
+
+      <div class="card mb-4 hidden-md-down">
+        <div class="card-block">
+          <h6 class="mb-3">Extra time</h6>
+            <video width="230" height="180" controls id="guitar-video">
+              <source src="assets/img/exchange/guitar.mp4" type="video/mp4">
+                Please upgrade your browser
+            </video>
+            <button id="play-guitar-video">Play</button>
+          <p><strong>Way Back Home - SHAUN </strong> <br>
+             Short Version | Fingerstyle Guitar<br>| 2020.12.20
+        </p>
+
+        </div>
+      </div>
+        
+        <div class="card visible-md-block visible-lg-block">
+        <div class="card-block">
+          <h6 class="mb-3">Photos </h6>
+          <div data-grid="images" data-target-height="150">
+            <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/1.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/3.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/4.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/5.jpg">
+            </div>
+                                        <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/6.jpg">
+            </div>
+                                        <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/7.jpg">
+            </div>
+                                        <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/8.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/9.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/10.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/11.jpg">
+            </div>
+              
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/12.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/13.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/14.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/15.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/16.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/17.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/18.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/19.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/20.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/21.jpg">
+            </div>
+              
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/22.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/23.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/24.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/25.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/26.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/27.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/28.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/29.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/30.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/31.jpg">
+            </div>
+              
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/32.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/33.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/34.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/35.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/36.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/37.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/38.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/39.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/40.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/41.jpg">
+            </div>
+              
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/42.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/43.jpg">
+            </div>
+                          <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/44.jpg">
+            </div>
+            <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="assets/img/exchange/pic/45.jpg">
+            </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.min.js"></script>    
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApVxnOSRc-Ibs86bfJf2l5mGjDdhpl2DE&callback=initMap&libraries=&v=weekly"  async></script>
+    <script type="text/javascript">
+
+        
+        // control guitar video
+        document.getElementById("play-guitar-video").onclick = function(){
+            
+            if(document.getElementById("guitar-video").pause){
+                
+                document.getElementById("guitar-video").play();
+                this.innerHTML = "Pause";
+                
+            }else{
+                
+                document.getElementById("guitar-video").pause();
+                this.innerHTML = "Play";
+                
+            }
+            
+        }
+        
+      // execute/clear BS loaders for docs
+      $(function(){
+        if (window.BS&&window.BS.loader&&window.BS.loader.length) {
+          while(BS.loader.length){(BS.loader.pop())()}
+        }
+      })
+        
+        $("#copy-email-address").click(function(){
+            /* Get the text field */
+          var copyText = document.getElementById("my-email-address").innerHTML;
+            
+            navigator.clipboard.writeText(copyText).then(function() {
+          console.log('Async: Copying to clipboard was successful!');
+        }, function(err) {
+          console.error('Async: Could not copy text: ', err);
+        });
+
+          /* Alert the copied text */
+          alert("Copy Successful ");
+            
+        })
+    </script>
+  </body>
+</html>
+
