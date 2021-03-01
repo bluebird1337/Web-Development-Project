@@ -19,8 +19,14 @@
 
     if (array_key_exists("submit", $_POST)) {
         
-
-        include("connection.php");
+        $link = mysqli_connect("sdb-b.hosting.stackcp.net", "DiaryDatabase-313639ee98", "_<£|(C,N}{bR", "DiaryDatabase-313639ee98");
+        
+        if (mysqli_connect_error()) {
+            
+            die ("Database Connection Error");
+            
+        }
+        
         
         
         if (!$_POST['email']) {
@@ -50,7 +56,7 @@
 
                 if (mysqli_num_rows($result) > 0) {
 
-                    $error = "That email address is already taken.";
+                    $error = "That email address is taken.";
 
                 } else {
                     
@@ -122,116 +128,43 @@
                         $error = "That email/password combination could not be found.";
                         
                     }
+                    
                 }
+            
         }
         
-        if ($error != ""){
-            $error = '<div class="alert alert-danger" role="alert">'.$error.'</div>';
-        }
+        
     }
+
+
 ?>
 
-<?php include("header.php") ?>
-      
-    <div class="container" id="homepagecontainer">
-      
-        <h1>Diary</h1>
-        
-        <p>A place for you to keep your idea safe and permanent !</p>
+<div id="error"><?php echo $error; ?></div>
 
-        <form method="post" id="signUpForm">
-            
-            <p>Interesed ? Sign up now!</p>
-            
-            <div id="error"><?php echo $error; ?></div>
-            
-            <div class="form-group">
+<form method="post">
 
-                <input type="email" class="form-control" name="email" placeholder="Your Email">
-            
-            </div>
-            
-            <div class="form-group">
-
-                <input type="password" class="form-control" name="password" placeholder="Password">
-                
-            </div>
-            
-            <div class="form-check">
-                
-                <label class="form-check-label">
-
-                    <input  class="form-check-input" type="checkbox" name="stayLoggedIn" value=1>
-                    Stay logged in
-                    
-                </label>
-                
-            </div>
-            
-            <div class="form-group">
-
-                <input type="hidden" name="signUp" value="1">
-
-                <input type="submit" class="btn btn-success" name="submit" value="Sign Up!">
-            
-            </div>
-            
-            <p class="togglebutton"><a class="toggleForms">Log in</a></p>
-
-        </form>
-
-        <form method="post" id="loginForm">
-            
-            <p>Use email and password to log in!</p>
-            
-            <div id="error"><?php echo $error; ?></div>
-            
-            <div class="form-group">
-
-                <input type="email" class="form-control" name="email" placeholder="Your Email">
-            
-            </div>
-            
-            <div class="form-group">
-
-                <input type="password" class="form-control" name="password" placeholder="Password">
-            
-            </div>
-            
-            <div class="form-check">
-                
-                <label class="form-check-label">
-
-                    <input type="checkbox" class="form-check-input" name="stayLoggedIn" value=1>
-                    Stay logged in
-                    
-                </label>
-                
-            </div>
-            
-            <div class="form-group">
-
-                <input type="hidden" name="signUp" value="0">
-
-                <input type="submit" class="btn btn-success" name="submit" value="Log In!">
-                
-            </div>
-            
-            <p class="togglebutton"><a class="toggleForms">Sign up</a></p>
-
-        </form>
+    <input type="email" name="email" placeholder="Your Email">
     
-    </div>
+    <input type="password" name="password" placeholder="Password">
+    
+    <input type="checkbox" name="stayLoggedIn" value=1>
+    
+    <input type="hidden" name="signUp" value="1">
+        
+    <input type="submit" name="submit" value="Sign Up!">
 
-<?php include("footer.php") ?>
+</form>
 
+<form method="post">
 
+    <input type="email" name="email" placeholder="Your Email">
+    
+    <input type="password" name="password" placeholder="Password">
+    
+    <input type="checkbox" name="stayLoggedIn" value=1>
+    
+    <input type="hidden" name="signUp" value="0">
+        
+    <input type="submit" name="submit" value="Log In!">
 
-
-
-
-
-
-
-
-
+</form>
